@@ -1,0 +1,175 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a,
+img,
+label,
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and navigation styling */
+header {
+    background-color: #0044cc;
+    padding: 15px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    border-bottom: 2px solid #fff;
+}
+
+/* Main container styling */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.2rem;
+    color: #0044cc;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form container styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0044cc;
+}
+
+.contact-form button {
+    background-color: #0044cc;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.contact-form button:hover {
+    background-color: #003399;
+}
+
+/* Contact info section styling */
+.contact-info {
+    margin-top: 30px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    color: #0044cc;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #0044cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #003399;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0044cc;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    .contact-info h2 {
+        font-size: 1.3rem;
+    }
+}
